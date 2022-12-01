@@ -1,11 +1,11 @@
 // Christmas Hats
 // *------------------------------------------------*
 @if $enable-hats == "true" {
-  .topic-avatar {
+  .post-avatar {
     position: relative;
   }
 
-  .topic-avatar > a::after {
+  .post-avatar >::after {
     content: "";
     position: absolute;
     top: -40%;
@@ -16,15 +16,15 @@
     background-size: contain;
   }
 
-  .topic-post:nth-of-type(2n) .topic-avatar > a::after {
+  .topic-post:nth-of-type(2n) .post-avatar >::after {
     transform: rotate(-5deg) translateX(-4px);
   }
 
-  .topic-post:nth-of-type(3n) .topic-avatar > a::after {
+  .topic-post:nth-of-type(3n) .post-avatar >::after {
     transform: scaleX(-1) rotate(5deg) translateX(-8px);
   }
 
-  .topic-post:nth-of-type(5n) .topic-avatar > a::after {
+  .topic-post:nth-of-type(5n) .post-avatar >::after {
     transform: rotate(5deg) translateX(4px);
   }
 
